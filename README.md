@@ -3,6 +3,12 @@
 
 <img alt="preview" src="https://static.toiimg.com/thumb/msid-98366567,width-1280,height-720,resizemode-4/98366567.jpg" width="65%"></div>
 
+## 
+<h1>Checkout the full documentation : :   @ 👇👇 </h1>
+https://drive.google.com/file/d/1QvTfOfxDdVIzh8sfGfBo7xIZCXG3Loqm/view?usp=sharing
+
+
+
 ## Introduction
 The Airbnb Clone project serves as a practice exercise for implementing a frontend application with React.js while utilizing the Material-UI library for building intuitive and visually appealing user interfaces. By recreating the Airbnb experience, developers can gain insights into modern web development techniques, including responsive design, state management, and integration with external APIs.
 
@@ -13,6 +19,7 @@ Instructions to use this project :
 This project is configured in vscode and is a simple implementation
 
   * Clone this repository.
+  * Clone the Starter Code => It consists of the custom hooks , redux , themes amd other assests like images icons etc
   * Do not forget to add node modules by "npm i legacy--peer-dep" command
   * use npm run dev to run the file
   * if you have map box api access token then simply replace the const MAP_BOX_API="with your key"
@@ -41,9 +48,24 @@ PS : Contributing back to this project will be appreciated.
 ## Deployment
 https://airbnb-clone-dev.netlify.app/
 
+## Challenges and Solutions :
+1.0 Challenge: In the stack component, the children were not being properly aligned due to styling issues. This resulted in inconsistent layout and appearance.
+1.0 Solution: To address this issue, a grid component was created with both container and item properties. This allowed for proper alignment and styling of the children elements within the stack component, ensuring a consistent and visually pleasing layout.
+
+2.0 Challenge:
+The Airbnb clone frontend project encountered issues due to the requirement for a valid Mapbox access token. Without it, Mapbox-GL services couldn't render maps, leading to a deficient user interface.
+2.0 Solution: To resolve this, the project implemented prompts for a valid Mapbox access token and themes, ensuring seamless integration of Mapbox features and enhancing user customization options.  (caution=>mapboxapi is currently unaccessable)
+
+3.0 Challenge: In the guest selection component, when clicking on the plus button to increase the count for one guest type (e.g., pets), the counts for all guest types (e.g., adults, children, boomers) were increasing simultaneously. This behavior is unintended and leads to incorrect guest count adjustments.
+3.0 Solution: To resolve this issue, ensure that the event handler for incrementing the count of a specific guest type only affects that particular guest type's count state. Verify that the event handler function handleGuestChange correctly updates the state for the targeted guest type based on the button clicked (plus or minus) and only modifies the count for that specific guest type. Double-check the implementation to confirm that the correct state property is being updated within the function.
+
+More Detailed are Present in the doc @ 👇👇
+https://drive.google.com/file/d/1QvTfOfxDdVIzh8sfGfBo7xIZCXG3Loqm/view?usp=sharing
+
+
 ## Built With
 
-  * [Struts](https://v4.mui.com/) - For Styling
+  * [Material UI] (https://v4.mui.com/) - For Styling
   * React Js
   * Redux
   * JavaScript
